@@ -1,0 +1,29 @@
+<div class="sub-head">
+  <div class="left">
+    <h2>{{ report_name }}</h2>
+    <h2 style="font-size:12px; font-weight: normal;">
+      {{ subtitle }}
+    </h2>
+  </div>
+</div>
+
+<div style="padding-top:10px;">
+  <div id="reports_tableau_scroller"
+      style="
+        max-width: {{ report_width }}px;
+        min-width: {{ report_width }}px;
+        max-height: {{ report_height }}px;
+        min-height: {{ report_height }}px;
+        visibility: visible;"> 
+
+    <iframe id="reportiFrame" frameborder="0" allowtransparency="true"
+      marginheight="0" marginwidth="0" scrolling="no" src="{{ report_url }}"
+        style="
+          display:block;
+          visibility: visible;
+          width: {{ report_width }}px;
+          height: {{ report_height }}px;" >
+    </iframe>
+
+  </div>
+</div>
