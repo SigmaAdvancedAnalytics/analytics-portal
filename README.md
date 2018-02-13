@@ -11,9 +11,9 @@ Currently creates a naive list of divs from the Bokeh graphs provided, but in fu
 # Setup
 * Clone repository
 * (From inside repository) run:   
-	`docker build -t bokeh_flasker .`
+	`docker build -t portal .`
 * Run:  
- `docker run --rm -it -p 5000:5000 -v ${PWD}:/home bokeh_flasker /bin/bash -c "python /home/main.py"`  
+ `docker run --rm -it -p 5000:5000 -v ${PWD}:/home portal /bin/bash -c "python /home/main.py"`  
 * Check localhost:5000
 
 
